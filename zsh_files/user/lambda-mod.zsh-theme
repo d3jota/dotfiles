@@ -4,7 +4,7 @@ if [[ $USER == "root" ]]; then
 	local LAMBDA="%(?,%{$fg_bold[green]%}λ,%{$fg_bold[red]%}λ)"
 	USERCOLOR="red"
 else
-	local LAMBDA="%(?,%{$fg_bold[cyan]%}λ,%{$fg_bold[red]%}λ)"
+	local LAMBDA="%(?,%{$fg_bold[cyan]%},%{$fg_bold[red]%}λ)"
 	USERCOLOR="white"
 fi
 
@@ -39,7 +39,7 @@ function get_right_prompt() {
     fi
 }
 
-PROMPT=$'\n'$LAMBDA'\
+PROMPT=$'\n'$LAMBDA' \
  %{$fg_bold[$USERCOLOR]%}%n\
  %{$fg_no_bold[white]%}%3~\
  $(check_git_prompt_info)\
