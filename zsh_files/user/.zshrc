@@ -2,31 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/d3jota/.oh-my-zsh"
+export ZSH="/home/d3jota/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="powerlevel9k/powerlevel9k"
-# POWERLEVEL9K customs
-#POWERLEVEL9K_CUSTOM_FEDORA_ICON="echo '\uF17C' "
-#POWERLEVEL9K_CUSTOM_FEDORA_ICON_BACKGROUND='white'
-#POWERLEVEL9K_CUSTOM_FEDORA_ICON_FOREGROUND='black'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)
-#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv history time)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv history)
-POWERLEVEL9K_MODE="nerdfont-complete"
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="$ "
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
-POWERLEVEL9K_USER_DEFAULT_FOREGROUND=87
-POWERLEVEL9K_USER_DEFAULT_BACKGROUND=239
-POWERLEVEL9K_USER_SUDO_FOREGROUND=46
-POWERLEVEL9K_USER_SUDO_BACKGROUND=239
-POWERLEVEL9K_USER_ROOT_FOREGROUND=0
-POWERLEVEL9K_USER_ROOT_BACKGROUND=9
+ZSH_THEME="lambda-mod"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -82,8 +64,8 @@ POWERLEVEL9K_USER_ROOT_BACKGROUND=9
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-syntax-highlighting
   dnf
+  zsh-syntax-highlighting
   zsh-autosuggestions
 )
 
